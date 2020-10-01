@@ -29,3 +29,13 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
    
    Apenas stakeholders autenticados poderão ter acesso ao uniTunes. Sendo assim, a uniTunes deverá apresentar as seguintes funcionalidades: (1) criar conta de usuário. Para isso, o novo usuário deverá fornecer os seguintes dados: primeiro nome, último nome, e-mail (será o login), senha, confirmação de senha; (2) recuperar senha cadastrada, a qual será enviada para o e-mail do usuário; (3) autenticar (fazer login/logout) no sistema. Acadêmicos não poderão ter acesso às funcionalidades inerentes aos autores, nem àquelas inerentes aos administradores. Autores não poderão também ter acesso às funcionalidades inerente ao administrador do sistema. O sistema deve ser capaz de checar se e-mail de cadastro é válido, garantir que a senha tem no mínimo 6 e no máximo 30 caracteres alfanuméricos, garantir que os campos da senha e da confirmação de senha sejam iguais, garantir que o primeiro e último nome não são nulos. Os autores poderão criar álbuns para melhor organizar as suas músicas. Um álbum terá ao menos uma música. Os acadêmicos poderão visualizar os álbuns novos, os álbuns mais recentes e todos os álbuns cadastrados no sistema (vide Figura 1). Álbuns novos são aqueles cadastrados nos últimos sessenta dias, tomando como referência a data que o autor disponibilizou o mesmo para acesso e a data corrente. Por exemplo, se um autor cadastra um álbum em 01/03/1990 e um usuário acessa o uniTunes em 10/04/1990, o álbum será classificado como um álbum novo (vide Figura 1). Se o acesso ocorre em 05/05/1990, o álbum será classificado como recente (vide Figura 1). O uniTunes poderá ser web, desktop ou um aplicativo para dispositivos móveis.
 
+![Alt text](img/img1.png)
+
+
+![Alt text](img/img2.png)
+
+
+![Alt text](img/img3.png)
+
+
+![Alt text](img/img4.png)
