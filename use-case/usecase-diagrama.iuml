@@ -1,0 +1,14 @@
+@startuml usecase
+skinparam linetype ortho
+
+:Acadêmico: as academico
+:Autor: as autor
+:Administrador: as administrador
+
+(Criar midia) as (create-media)
+
+academico <|-- autor
+
+autor -- (create-media)
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml class
+skinparam linetype ortho
+
+Flight <|-- Dummy
+
+class Dummy {
+  String data
+  void methods()
+}
+
+class Flight {
+  flightNumber : Integer
+  departureTime : Date
+}
+
+@enduml
