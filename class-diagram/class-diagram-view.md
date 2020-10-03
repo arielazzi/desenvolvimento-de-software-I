@@ -1,1 +1,1 @@
-![](./out/class.svg)
+![](./out/class-diagram/class.svg)
