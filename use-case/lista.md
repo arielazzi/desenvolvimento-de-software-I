@@ -5,8 +5,8 @@ Especificações:
 - [X] criar midia
 - [X] remover midia
 - [X] comprar mídia
-- [ ] vender mídia
-- [ ] adicionar crédito
+<!-- - [ ] vender mídia -->
+- [X] adicionar crédito
 
 - [ ] visualizar midia
 - [ ] visualizar lista
