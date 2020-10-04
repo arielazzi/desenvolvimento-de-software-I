@@ -7,6 +7,8 @@ Especificações:
 - [X] comprar mídia
 <!-- - [ ] vender mídia -->
 - [X] adicionar crédito
+- [X] autenticar
+
 
 - [ ] visualizar midia
 - [ ] visualizar lista
@@ -14,5 +16,4 @@ Especificações:
 - [ ] visualizar crédito
 - [ ] recuperar senha
 
-- [ ] autenticar
 
