@@ -7,7 +7,7 @@ UC004 - Remover Midia
 O **Autor da mídia** ou o **Admnistrador** remove uma mídia do sistema.
 
 ## ATORES
-1. Autor da mídia ou Admnistrador (Usuário)
+1. **Autor da mídia** ou **Admnistrador** (Usuário)
 
 ## PRÉ-CONDIÇÕES
 1. O usuário está autenticado no sistema

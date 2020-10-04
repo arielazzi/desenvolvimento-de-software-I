@@ -4,7 +4,7 @@ Especificações:
 - [X] excluir conta
 - [X] criar midia
 - [X] remover midia
-- [ ] comprar mídia
+- [X] comprar mídia
 - [ ] vender mídia
 - [ ] adicionar crédito
 
