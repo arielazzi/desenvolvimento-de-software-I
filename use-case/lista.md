@@ -10,10 +10,11 @@ Especificações:
 - [X] autenticar
 
 
-- [ ] visualizar midia
-- [ ] visualizar lista
-- [ ] classificar midia
-- [ ] visualizar crédito
-- [ ] recuperar senha
+- [X] visualizar midia
+<!-- - [ ] visualizar lista de favoritos -->
+- [X] classificar midia
+- [X] visualizar crédito
+- [X] recuperar senha
+- [X] fazer download de mídia
 
 
