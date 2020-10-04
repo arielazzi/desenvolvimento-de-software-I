@@ -1,4 +1,4 @@
-# Desenvolvimento de Software I
+# Desenvolvimento de Software I :computer:
 
 Este repositório tem como objetivo o desenvolvimento das etapas I e II do trabalho da cadeira de Desenvolvimento de Software I 2020/2.
 
