@@ -39,3 +39,14 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 
 ![Alt text](img/img4.png)
+
+
+## Contributors ✨
+
+<table>
+  <tr>
+    <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/17055516?s=460&u=8349659f0012b935bd8dd92c822b3fca02ed3049&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Ariel Azzi</b></sub></a></td>
+     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars2.githubusercontent.com/u/25901846?s=460&u=fe44793f8027f6187420ed4d628697df3318cc76&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Andresho</b></sub></a></td>
+     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/48125062?s=460&v=4?v=3" width="100px;" alt=""/><br /><sub><b>joaovitorps</b></sub></a></td>
+  </tr>
+</table>
