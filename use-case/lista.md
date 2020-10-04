@@ -1,8 +1,8 @@
 Especificações: 
 
 - [X] criar conta
-- [ ] excluir conta
-- [ ] criar midia
+- [X] excluir conta
+- [X] criar midia
 - [ ] remover midia
 - [ ] comprar mídia
 - [ ] vender mídia
