@@ -1,5 +1,4 @@
 @startuml class
-skinparam linetype ortho
 
 /'
 enum TipoUsuario {
