@@ -1,21 +1,182 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="230px" preserveAspectRatio="none" style="width:131px;height:230px;" version="1.1" viewBox="0 0 131 230" width="131px" zoomAndPan="magnify"><defs><filter height="300%" id="focd8l8ubmubi" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[bd6e5d4dd3d7814cbdc3148d3ed1ec4b]
-class Flight--><rect fill="#FEFECE" filter="url(#focd8l8ubmubi)" height="75.6719" id="Flight" style="stroke: #A80036; stroke-width: 1.5;" width="114" x="6" y="8"/><ellipse cx="44.4" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M47.1656,19.875 Q47.3219,19.6563 47.5094,19.5469 Q47.6969,19.4375 47.9156,19.4375 Q48.2906,19.4375 48.525,19.6953 Q48.7594,19.9531 48.7594,20.5625 L48.7594,22.0156 Q48.7594,22.625 48.525,22.8906 Q48.2906,23.1563 47.9156,23.1563 Q47.5719,23.1563 47.3688,22.9531 Q47.1656,22.7656 47.0563,22.25 Q47.0094,21.8906 46.8219,21.7031 Q46.4938,21.3281 45.8844,21.1094 Q45.275,20.8906 44.65,20.8906 Q43.8844,20.8906 43.2516,21.2188 Q42.6188,21.5469 42.1266,22.2969 Q41.6344,23.0469 41.6344,24.0781 L41.6344,25.1719 Q41.6344,26.4063 42.525,27.2266 Q43.4156,28.0469 45.0094,28.0469 Q45.9469,28.0469 46.6031,27.7969 Q46.9938,27.6406 47.4156,27.2031 Q47.6813,26.9375 47.8297,26.8594 Q47.9781,26.7813 48.1813,26.7813 Q48.5094,26.7813 48.7672,27.0391 Q49.025,27.2969 49.025,27.6406 Q49.025,27.9844 48.6813,28.3906 Q48.1813,28.9688 47.3844,29.2969 Q46.3063,29.75 45.0094,29.75 Q43.4938,29.75 42.2906,29.125 Q41.3063,28.625 40.6188,27.5547 Q39.9313,26.4844 39.9313,25.2031 L39.9313,24.0469 Q39.9313,22.7188 40.5484,21.5703 Q41.1656,20.4219 42.2594,19.8047 Q43.3531,19.1875 44.5875,19.1875 Q45.3219,19.1875 45.9703,19.3516 Q46.6188,19.5156 47.1656,19.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="63.6" y="28.9102">Flight</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="119" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="12" y="55.4189">flightNumber : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="12" y="69.2549">departureTime : Date</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="119" y1="75.6719" y2="75.6719"/><!--MD5=[c54ba4f61d01a424743e5a1fa0f9e38e]
-class Dummy--><rect fill="#FEFECE" filter="url(#focd8l8ubmubi)" height="75.6719" id="Dummy" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="21" y="144"/><ellipse cx="40.05" cy="160" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M42.8156,155.875 Q42.9719,155.6563 43.1594,155.5469 Q43.3469,155.4375 43.5656,155.4375 Q43.9406,155.4375 44.175,155.6953 Q44.4094,155.9531 44.4094,156.5625 L44.4094,158.0156 Q44.4094,158.625 44.175,158.8906 Q43.9406,159.1563 43.5656,159.1563 Q43.2219,159.1563 43.0188,158.9531 Q42.8156,158.7656 42.7063,158.25 Q42.6594,157.8906 42.4719,157.7031 Q42.1438,157.3281 41.5344,157.1094 Q40.925,156.8906 40.3,156.8906 Q39.5344,156.8906 38.9016,157.2188 Q38.2688,157.5469 37.7766,158.2969 Q37.2844,159.0469 37.2844,160.0781 L37.2844,161.1719 Q37.2844,162.4063 38.175,163.2266 Q39.0656,164.0469 40.6594,164.0469 Q41.5969,164.0469 42.2531,163.7969 Q42.6438,163.6406 43.0656,163.2031 Q43.3313,162.9375 43.4797,162.8594 Q43.6281,162.7813 43.8313,162.7813 Q44.1594,162.7813 44.4172,163.0391 Q44.675,163.2969 44.675,163.6406 Q44.675,163.9844 44.3313,164.3906 Q43.8313,164.9688 43.0344,165.2969 Q41.9563,165.75 40.6594,165.75 Q39.1438,165.75 37.9406,165.125 Q36.9563,164.625 36.2688,163.5547 Q35.5813,162.4844 35.5813,161.2031 L35.5813,160.0469 Q35.5813,158.7188 36.1984,157.5703 Q36.8156,156.4219 37.9094,155.8047 Q39.0031,155.1875 40.2375,155.1875 Q40.9719,155.1875 41.6203,155.3516 Q42.2688,155.5156 42.8156,155.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="54.95" y="164.9102">Dummy</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22" x2="104" y1="176" y2="176"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="27" y="191.4189">String data</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22" x2="104" y1="197.8359" y2="197.8359"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="27" y="213.2549">void methods()</text><!--MD5=[7953794471cfbcdf065b439153f8da70]
-reverse link Flight to Dummy--><path d="M63,104.246 C63,104.246 63,143.5703 63,143.5703 " fill="none" id="Flight&lt;-Dummy" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="56.0001,104.246,63,84.246,70.0001,104.245,56.0001,104.246" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b99a70b2b20ffa63fa16ba80c80aa237]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="978px" preserveAspectRatio="none" style="width:347px;height:978px;" version="1.1" viewBox="0 0 347 978" width="347px" zoomAndPan="magnify"><defs><filter height="300%" id="fqxv5ekzjxmud" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[35a64b983c79880384a2fd9b61f0c24b]
+class Usuario--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="158.6875" id="Usuario" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="129" y="8"/><ellipse cx="178.25" cy="24" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M180.4375,25.7656 L176.2969,25.7656 L175.875,26.7969 L176.2969,26.7969 Q176.9063,26.7969 177.1719,27.0313 Q177.4375,27.2656 177.4375,27.6563 Q177.4375,28.0313 177.1719,28.2656 Q176.9063,28.5 176.2969,28.5 L174,28.5 Q173.3906,28.5 173.1328,28.2656 Q172.875,28.0313 172.875,27.6406 Q172.875,27.2656 173.1484,27.0234 Q173.4219,26.7813 174.0469,26.7969 L176.7188,20.1406 L175.6094,20.1406 Q175,20.1406 174.7344,19.9063 Q174.4688,19.6719 174.4688,19.2813 Q174.4688,18.9063 174.7344,18.6719 Q175,18.4375 175.6094,18.4375 L179.2813,18.4375 L182.6719,26.7969 Q183.2656,26.7969 183.4531,26.9375 Q183.8438,27.2031 183.8438,27.6563 Q183.8438,28.0313 183.5859,28.2656 Q183.3281,28.5 182.7188,28.5 L180.4219,28.5 Q179.8125,28.5 179.5469,28.2656 Q179.2813,28.0313 179.2813,27.6406 Q179.2813,27.2656 179.5469,27.0313 Q179.8125,26.7969 180.4219,26.7969 L180.8438,26.7969 L180.4375,25.7656 Z M179.7188,24.0625 L178.3594,20.6875 L176.9844,24.0625 L179.7188,24.0625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="43" x="198.75" y="28.9102">Usuario</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="278" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="135" y="55.4189">nome</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="135" y="69.2549">ultimoNome</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="24" x="135" y="83.0908">email</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="30" x="135" y="96.9268">senha</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="33" x="135" y="110.7627">credito</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="138" x="135" y="124.5986">List&lt;Midia&gt; midiasAdquiridas</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="130" x2="278" y1="131.0156" y2="131.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="135" y="146.4346">autentica()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="135" y="160.2705">adicionaCreditos()</text><!--MD5=[dc04dbf1821e9b6a5ff361465a379a2f]
+class Academico--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Academico" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="21.5" y="227"/><ellipse cx="36.5" cy="243" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M39.2656,238.875 Q39.4219,238.6563 39.6094,238.5469 Q39.7969,238.4375 40.0156,238.4375 Q40.3906,238.4375 40.625,238.6953 Q40.8594,238.9531 40.8594,239.5625 L40.8594,241.0156 Q40.8594,241.625 40.625,241.8906 Q40.3906,242.1563 40.0156,242.1563 Q39.6719,242.1563 39.4688,241.9531 Q39.2656,241.7656 39.1563,241.25 Q39.1094,240.8906 38.9219,240.7031 Q38.5938,240.3281 37.9844,240.1094 Q37.375,239.8906 36.75,239.8906 Q35.9844,239.8906 35.3516,240.2188 Q34.7188,240.5469 34.2266,241.2969 Q33.7344,242.0469 33.7344,243.0781 L33.7344,244.1719 Q33.7344,245.4063 34.625,246.2266 Q35.5156,247.0469 37.1094,247.0469 Q38.0469,247.0469 38.7031,246.7969 Q39.0938,246.6406 39.5156,246.2031 Q39.7813,245.9375 39.9297,245.8594 Q40.0781,245.7813 40.2813,245.7813 Q40.6094,245.7813 40.8672,246.0391 Q41.125,246.2969 41.125,246.6406 Q41.125,246.9844 40.7813,247.3906 Q40.2813,247.9688 39.4844,248.2969 Q38.4063,248.75 37.1094,248.75 Q35.5938,248.75 34.3906,248.125 Q33.4063,247.625 32.7188,246.5547 Q32.0313,245.4844 32.0313,244.2031 L32.0313,243.0469 Q32.0313,241.7188 32.6484,240.5703 Q33.2656,239.4219 34.3594,238.8047 Q35.4531,238.1875 36.6875,238.1875 Q37.4219,238.1875 38.0703,238.3516 Q38.7188,238.5156 39.2656,238.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="61" x="50.5" y="247.9102">Academico</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.5" x2="113.5" y1="259" y2="259"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="22.5" x2="113.5" y1="267" y2="267"/><!--MD5=[fdcda49d453d44c676d62f3f6af62207]
+class Administrador--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Administrador" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="149.5" y="227"/><ellipse cx="164.5" cy="243" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M167.2656,238.875 Q167.4219,238.6563 167.6094,238.5469 Q167.7969,238.4375 168.0156,238.4375 Q168.3906,238.4375 168.625,238.6953 Q168.8594,238.9531 168.8594,239.5625 L168.8594,241.0156 Q168.8594,241.625 168.625,241.8906 Q168.3906,242.1563 168.0156,242.1563 Q167.6719,242.1563 167.4688,241.9531 Q167.2656,241.7656 167.1563,241.25 Q167.1094,240.8906 166.9219,240.7031 Q166.5938,240.3281 165.9844,240.1094 Q165.375,239.8906 164.75,239.8906 Q163.9844,239.8906 163.3516,240.2188 Q162.7188,240.5469 162.2266,241.2969 Q161.7344,242.0469 161.7344,243.0781 L161.7344,244.1719 Q161.7344,245.4063 162.625,246.2266 Q163.5156,247.0469 165.1094,247.0469 Q166.0469,247.0469 166.7031,246.7969 Q167.0938,246.6406 167.5156,246.2031 Q167.7813,245.9375 167.9297,245.8594 Q168.0781,245.7813 168.2813,245.7813 Q168.6094,245.7813 168.8672,246.0391 Q169.125,246.2969 169.125,246.6406 Q169.125,246.9844 168.7813,247.3906 Q168.2813,247.9688 167.4844,248.2969 Q166.4063,248.75 165.1094,248.75 Q163.5938,248.75 162.3906,248.125 Q161.4063,247.625 160.7188,246.5547 Q160.0313,245.4844 160.0313,244.2031 L160.0313,243.0469 Q160.0313,241.7188 160.6484,240.5703 Q161.2656,239.4219 162.3594,238.8047 Q163.4531,238.1875 164.6875,238.1875 Q165.4219,238.1875 166.0703,238.3516 Q166.7188,238.5156 167.2656,238.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="77" x="178.5" y="247.9102">Administrador</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="150.5" x2="257.5" y1="259" y2="259"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="150.5" x2="257.5" y1="267" y2="267"/><!--MD5=[7560274dc4d8b0cfc2c0496e7291d5fc]
+class Album--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="61.8359" id="Album" style="stroke: #A80036; stroke-width: 1.5;" width="118" x="6" y="906"/><ellipse cx="43.95" cy="922" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M46.7156,917.875 Q46.8719,917.6563 47.0594,917.5469 Q47.2469,917.4375 47.4656,917.4375 Q47.8406,917.4375 48.075,917.6953 Q48.3094,917.9531 48.3094,918.5625 L48.3094,920.0156 Q48.3094,920.625 48.075,920.8906 Q47.8406,921.1563 47.4656,921.1563 Q47.1219,921.1563 46.9188,920.9531 Q46.7156,920.7656 46.6063,920.25 Q46.5594,919.8906 46.3719,919.7031 Q46.0438,919.3281 45.4344,919.1094 Q44.825,918.8906 44.2,918.8906 Q43.4344,918.8906 42.8016,919.2188 Q42.1688,919.5469 41.6766,920.2969 Q41.1844,921.0469 41.1844,922.0781 L41.1844,923.1719 Q41.1844,924.4063 42.075,925.2266 Q42.9656,926.0469 44.5594,926.0469 Q45.4969,926.0469 46.1531,925.7969 Q46.5438,925.6406 46.9656,925.2031 Q47.2313,924.9375 47.3797,924.8594 Q47.5281,924.7813 47.7313,924.7813 Q48.0594,924.7813 48.3172,925.0391 Q48.575,925.2969 48.575,925.6406 Q48.575,925.9844 48.2313,926.3906 Q47.7313,926.9688 46.9344,927.2969 Q45.8563,927.75 44.5594,927.75 Q43.0438,927.75 41.8406,927.125 Q40.8563,926.625 40.1688,925.5547 Q39.4813,924.4844 39.4813,923.2031 L39.4813,922.0469 Q39.4813,920.7188 40.0984,919.5703 Q40.7156,918.4219 41.8094,917.8047 Q42.9031,917.1875 44.1375,917.1875 Q44.8719,917.1875 45.5203,917.3516 Q46.1688,917.5156 46.7156,917.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="63.05" y="926.9102">Album</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="123" y1="938" y2="938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="12" y="953.4189">List&lt;Musica&gt; musicas</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="123" y1="959.8359" y2="959.8359"/><!--MD5=[17f253dd83c370255a059fc7ad56c447]
+class Midia--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="172.5234" id="Midia" style="stroke: #A80036; stroke-width: 1.5;" width="70" x="195" y="443"/><ellipse cx="214.05" cy="459" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M216.2375,460.7656 L212.0969,460.7656 L211.675,461.7969 L212.0969,461.7969 Q212.7063,461.7969 212.9719,462.0313 Q213.2375,462.2656 213.2375,462.6563 Q213.2375,463.0313 212.9719,463.2656 Q212.7063,463.5 212.0969,463.5 L209.8,463.5 Q209.1906,463.5 208.9328,463.2656 Q208.675,463.0313 208.675,462.6406 Q208.675,462.2656 208.9484,462.0234 Q209.2219,461.7813 209.8469,461.7969 L212.5188,455.1406 L211.4094,455.1406 Q210.8,455.1406 210.5344,454.9063 Q210.2688,454.6719 210.2688,454.2813 Q210.2688,453.9063 210.5344,453.6719 Q210.8,453.4375 211.4094,453.4375 L215.0813,453.4375 L218.4719,461.7969 Q219.0656,461.7969 219.2531,461.9375 Q219.6438,462.2031 219.6438,462.6563 Q219.6438,463.0313 219.3859,463.2656 Q219.1281,463.5 218.5188,463.5 L216.2219,463.5 Q215.6125,463.5 215.3469,463.2656 Q215.0813,463.0313 215.0813,462.6406 Q215.0813,462.2656 215.3469,462.0313 Q215.6125,461.7969 216.2219,461.7969 L216.6438,461.7969 L216.2375,460.7656 Z M215.5188,459.0625 L214.1594,455.6875 L212.7844,459.0625 L215.5188,459.0625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="29" x="228.95" y="463.9102">Midia</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="196" x2="264" y1="475" y2="475"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="26" x="201" y="490.4189">nome</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="48" x="201" y="504.2549">descricao</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="36" x="201" y="518.0908">imagem</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="28" x="201" y="531.9268">preco</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="37" x="201" y="545.7627">autores</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="201" y="559.5986">conteudo</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="201" y="573.4346">dataCriacao</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="38" x="201" y="587.2705">pagavel</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51" x="201" y="601.1064">categorias</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="196" x2="264" y1="607.5234" y2="607.5234"/><!--MD5=[fbbb13a747cf4d9626dbd92a2c7c5b05]
+class MidiaPlayer--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="61.8359" id="MidiaPlayer" style="stroke: #A80036; stroke-width: 1.5;" width="96" x="119" y="676"/><ellipse cx="134" cy="692" fill="#A9DCDF" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M136.1875,693.7656 L132.0469,693.7656 L131.625,694.7969 L132.0469,694.7969 Q132.6563,694.7969 132.9219,695.0313 Q133.1875,695.2656 133.1875,695.6563 Q133.1875,696.0313 132.9219,696.2656 Q132.6563,696.5 132.0469,696.5 L129.75,696.5 Q129.1406,696.5 128.8828,696.2656 Q128.625,696.0313 128.625,695.6406 Q128.625,695.2656 128.8984,695.0234 Q129.1719,694.7813 129.7969,694.7969 L132.4688,688.1406 L131.3594,688.1406 Q130.75,688.1406 130.4844,687.9063 Q130.2188,687.6719 130.2188,687.2813 Q130.2188,686.9063 130.4844,686.6719 Q130.75,686.4375 131.3594,686.4375 L135.0313,686.4375 L138.4219,694.7969 Q139.0156,694.7969 139.2031,694.9375 Q139.5938,695.2031 139.5938,695.6563 Q139.5938,696.0313 139.3359,696.2656 Q139.0781,696.5 138.4688,696.5 L136.1719,696.5 Q135.5625,696.5 135.2969,696.2656 Q135.0313,696.0313 135.0313,695.6406 Q135.0313,695.2656 135.2969,695.0313 Q135.5625,694.7969 136.1719,694.7969 L136.5938,694.7969 L136.1875,693.7656 Z M135.4688,692.0625 L134.1094,688.6875 L132.7344,692.0625 L135.4688,692.0625 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="64" x="148" y="696.9102">MidiaPlayer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="120" x2="214" y1="708" y2="708"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="40" x="125" y="723.4189">duracao</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="120" x2="214" y1="729.8359" y2="729.8359"/><!--MD5=[f45ed34e1fd2d44e62b0a8e0606f603d]
+class Livro--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="61.8359" id="Livro" style="stroke: #A80036; stroke-width: 1.5;" width="86" x="250" y="676"/><ellipse cx="277.6" cy="692" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M280.3656,687.875 Q280.5219,687.6563 280.7094,687.5469 Q280.8969,687.4375 281.1156,687.4375 Q281.4906,687.4375 281.725,687.6953 Q281.9594,687.9531 281.9594,688.5625 L281.9594,690.0156 Q281.9594,690.625 281.725,690.8906 Q281.4906,691.1563 281.1156,691.1563 Q280.7719,691.1563 280.5688,690.9531 Q280.3656,690.7656 280.2563,690.25 Q280.2094,689.8906 280.0219,689.7031 Q279.6938,689.3281 279.0844,689.1094 Q278.475,688.8906 277.85,688.8906 Q277.0844,688.8906 276.4516,689.2188 Q275.8188,689.5469 275.3266,690.2969 Q274.8344,691.0469 274.8344,692.0781 L274.8344,693.1719 Q274.8344,694.4063 275.725,695.2266 Q276.6156,696.0469 278.2094,696.0469 Q279.1469,696.0469 279.8031,695.7969 Q280.1938,695.6406 280.6156,695.2031 Q280.8813,694.9375 281.0297,694.8594 Q281.1781,694.7813 281.3813,694.7813 Q281.7094,694.7813 281.9672,695.0391 Q282.225,695.2969 282.225,695.6406 Q282.225,695.9844 281.8813,696.3906 Q281.3813,696.9688 280.5844,697.2969 Q279.5063,697.75 278.2094,697.75 Q276.6938,697.75 275.4906,697.125 Q274.5063,696.625 273.8188,695.5547 Q273.1313,694.4844 273.1313,693.2031 L273.1313,692.0469 Q273.1313,690.7188 273.7484,689.5703 Q274.3656,688.4219 275.4594,687.8047 Q276.5531,687.1875 277.7875,687.1875 Q278.5219,687.1875 279.1703,687.3516 Q279.8188,687.5156 280.3656,687.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="294.4" y="696.9102">Livro</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="251" x2="335" y1="708" y2="708"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="256" y="723.4189">numeroPaginas</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="251" x2="335" y1="729.8359" y2="729.8359"/><!--MD5=[2927a630b13e88512b2d3b16c23c7e23]
+class Musica--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Musica" style="stroke: #A80036; stroke-width: 1.5;" width="71" x="29.5" y="798"/><ellipse cx="44.5" cy="814" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M47.2656,809.875 Q47.4219,809.6563 47.6094,809.5469 Q47.7969,809.4375 48.0156,809.4375 Q48.3906,809.4375 48.625,809.6953 Q48.8594,809.9531 48.8594,810.5625 L48.8594,812.0156 Q48.8594,812.625 48.625,812.8906 Q48.3906,813.1563 48.0156,813.1563 Q47.6719,813.1563 47.4688,812.9531 Q47.2656,812.7656 47.1563,812.25 Q47.1094,811.8906 46.9219,811.7031 Q46.5938,811.3281 45.9844,811.1094 Q45.375,810.8906 44.75,810.8906 Q43.9844,810.8906 43.3516,811.2188 Q42.7188,811.5469 42.2266,812.2969 Q41.7344,813.0469 41.7344,814.0781 L41.7344,815.1719 Q41.7344,816.4063 42.625,817.2266 Q43.5156,818.0469 45.1094,818.0469 Q46.0469,818.0469 46.7031,817.7969 Q47.0938,817.6406 47.5156,817.2031 Q47.7813,816.9375 47.9297,816.8594 Q48.0781,816.7813 48.2813,816.7813 Q48.6094,816.7813 48.8672,817.0391 Q49.125,817.2969 49.125,817.6406 Q49.125,817.9844 48.7813,818.3906 Q48.2813,818.9688 47.4844,819.2969 Q46.4063,819.75 45.1094,819.75 Q43.5938,819.75 42.3906,819.125 Q41.4063,818.625 40.7188,817.5547 Q40.0313,816.4844 40.0313,815.2031 L40.0313,814.0469 Q40.0313,812.7188 40.6484,811.5703 Q41.2656,810.4219 42.3594,809.8047 Q43.4531,809.1875 44.6875,809.1875 Q45.4219,809.1875 46.0703,809.3516 Q46.7188,809.5156 47.2656,809.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="58.5" y="818.9102">Musica</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="30.5" x2="99.5" y1="830" y2="830"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="30.5" x2="99.5" y1="838" y2="838"/><!--MD5=[166247bf81aba95c770c3b8fd8e3cb19]
+class Video--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Video" style="stroke: #A80036; stroke-width: 1.5;" width="63" x="135.5" y="798"/><ellipse cx="150.5" cy="814" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M153.2656,809.875 Q153.4219,809.6563 153.6094,809.5469 Q153.7969,809.4375 154.0156,809.4375 Q154.3906,809.4375 154.625,809.6953 Q154.8594,809.9531 154.8594,810.5625 L154.8594,812.0156 Q154.8594,812.625 154.625,812.8906 Q154.3906,813.1563 154.0156,813.1563 Q153.6719,813.1563 153.4688,812.9531 Q153.2656,812.7656 153.1563,812.25 Q153.1094,811.8906 152.9219,811.7031 Q152.5938,811.3281 151.9844,811.1094 Q151.375,810.8906 150.75,810.8906 Q149.9844,810.8906 149.3516,811.2188 Q148.7188,811.5469 148.2266,812.2969 Q147.7344,813.0469 147.7344,814.0781 L147.7344,815.1719 Q147.7344,816.4063 148.625,817.2266 Q149.5156,818.0469 151.1094,818.0469 Q152.0469,818.0469 152.7031,817.7969 Q153.0938,817.6406 153.5156,817.2031 Q153.7813,816.9375 153.9297,816.8594 Q154.0781,816.7813 154.2813,816.7813 Q154.6094,816.7813 154.8672,817.0391 Q155.125,817.2969 155.125,817.6406 Q155.125,817.9844 154.7813,818.3906 Q154.2813,818.9688 153.4844,819.2969 Q152.4063,819.75 151.1094,819.75 Q149.5938,819.75 148.3906,819.125 Q147.4063,818.625 146.7188,817.5547 Q146.0313,816.4844 146.0313,815.2031 L146.0313,814.0469 Q146.0313,812.7188 146.6484,811.5703 Q147.2656,810.4219 148.3594,809.8047 Q149.4531,809.1875 150.6875,809.1875 Q151.4219,809.1875 152.0703,809.3516 Q152.7188,809.5156 153.2656,809.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="164.5" y="818.9102">Video</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="136.5" x2="197.5" y1="830" y2="830"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="136.5" x2="197.5" y1="838" y2="838"/><!--MD5=[148499297b6f36812855c8d7dd33a717]
+class Podcast--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Podcast" style="stroke: #A80036; stroke-width: 1.5;" width="77" x="233.5" y="798"/><ellipse cx="248.5" cy="814" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M251.2656,809.875 Q251.4219,809.6563 251.6094,809.5469 Q251.7969,809.4375 252.0156,809.4375 Q252.3906,809.4375 252.625,809.6953 Q252.8594,809.9531 252.8594,810.5625 L252.8594,812.0156 Q252.8594,812.625 252.625,812.8906 Q252.3906,813.1563 252.0156,813.1563 Q251.6719,813.1563 251.4688,812.9531 Q251.2656,812.7656 251.1563,812.25 Q251.1094,811.8906 250.9219,811.7031 Q250.5938,811.3281 249.9844,811.1094 Q249.375,810.8906 248.75,810.8906 Q247.9844,810.8906 247.3516,811.2188 Q246.7188,811.5469 246.2266,812.2969 Q245.7344,813.0469 245.7344,814.0781 L245.7344,815.1719 Q245.7344,816.4063 246.625,817.2266 Q247.5156,818.0469 249.1094,818.0469 Q250.0469,818.0469 250.7031,817.7969 Q251.0938,817.6406 251.5156,817.2031 Q251.7813,816.9375 251.9297,816.8594 Q252.0781,816.7813 252.2813,816.7813 Q252.6094,816.7813 252.8672,817.0391 Q253.125,817.2969 253.125,817.6406 Q253.125,817.9844 252.7813,818.3906 Q252.2813,818.9688 251.4844,819.2969 Q250.4063,819.75 249.1094,819.75 Q247.5938,819.75 246.3906,819.125 Q245.4063,818.625 244.7188,817.5547 Q244.0313,816.4844 244.0313,815.2031 L244.0313,814.0469 Q244.0313,812.7188 244.6484,811.5703 Q245.2656,810.4219 246.3594,809.8047 Q247.4531,809.1875 248.6875,809.1875 Q249.4219,809.1875 250.0703,809.3516 Q250.7188,809.5156 251.2656,809.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45" x="262.5" y="818.9102">Podcast</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="234.5" x2="309.5" y1="830" y2="830"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="234.5" x2="309.5" y1="838" y2="838"/><!--MD5=[7b7d686d3dc2c644927357cb508758fd]
+class Autor--><rect fill="#FEFECE" filter="url(#fqxv5ekzjxmud)" height="48" id="Autor" style="stroke: #A80036; stroke-width: 1.5;" width="60" x="118" y="335"/><ellipse cx="133" cy="351" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M135.7656,346.875 Q135.9219,346.6563 136.1094,346.5469 Q136.2969,346.4375 136.5156,346.4375 Q136.8906,346.4375 137.125,346.6953 Q137.3594,346.9531 137.3594,347.5625 L137.3594,349.0156 Q137.3594,349.625 137.125,349.8906 Q136.8906,350.1563 136.5156,350.1563 Q136.1719,350.1563 135.9688,349.9531 Q135.7656,349.7656 135.6563,349.25 Q135.6094,348.8906 135.4219,348.7031 Q135.0938,348.3281 134.4844,348.1094 Q133.875,347.8906 133.25,347.8906 Q132.4844,347.8906 131.8516,348.2188 Q131.2188,348.5469 130.7266,349.2969 Q130.2344,350.0469 130.2344,351.0781 L130.2344,352.1719 Q130.2344,353.4063 131.125,354.2266 Q132.0156,355.0469 133.6094,355.0469 Q134.5469,355.0469 135.2031,354.7969 Q135.5938,354.6406 136.0156,354.2031 Q136.2813,353.9375 136.4297,353.8594 Q136.5781,353.7813 136.7813,353.7813 Q137.1094,353.7813 137.3672,354.0391 Q137.625,354.2969 137.625,354.6406 Q137.625,354.9844 137.2813,355.3906 Q136.7813,355.9688 135.9844,356.2969 Q134.9063,356.75 133.6094,356.75 Q132.0938,356.75 130.8906,356.125 Q129.9063,355.625 129.2188,354.5547 Q128.5313,353.4844 128.5313,352.2031 L128.5313,351.0469 Q128.5313,349.7188 129.1484,348.5703 Q129.7656,347.4219 130.8594,346.8047 Q131.9531,346.1875 133.1875,346.1875 Q133.9219,346.1875 134.5703,346.3516 Q135.2188,346.5156 135.7656,346.875 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="28" x="147" y="355.9102">Autor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="119" x2="177" y1="367" y2="367"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="119" x2="177" y1="375" y2="375"/><!--MD5=[d0a83700a0fb0033d841bb213107c04c]
+reverse link Autor to Midia--><path d="M191.222,359 C191.222,359 226.75,359 226.75,359 C226.75,359 226.75,400.632 226.75,442.752 " fill="none" id="Autor&lt;-Midia" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="178.222,359,184.222,363,190.222,359,184.222,355,178.222,359" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="186.0202" y="354.6858">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="205.6113" y="432.1403">1..*</text><!--MD5=[8ca2f7d71a4bd8549b210d3fd3446ca9]
+reverse link Usuario to Midia--><path d="M272,180.121 C272,180.121 272,530 272,530 C272,530 269.208,530 265.065,530 " fill="none" id="Usuario&lt;-Midia" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="272,167.121,268,173.121,272,179.121,276,173.121,272,167.121" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5d8be773900fef823bca451b2769d179]
+reverse link Usuario to Academico--><path d="M139.25,187.072 C139.25,187.072 139.25,243 139.25,243 C139.25,243 128.16,243 114.73,243 " fill="none" id="Usuario&lt;-Academico" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="132.25,187.072,139.25,167.072,146.25,187.072,132.25,187.072" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2386fb79edec01e4d2430678291cfc6c]
+reverse link Academico to Autor--><path d="M122.608,259 C122.608,259 123.5,259 123.5,259 C123.5,259 123.5,305.198 123.5,334.793 " fill="none" id="Academico&lt;-Autor" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="134.583,266,114.583,259,134.583,252,134.583,266" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[39a07826a1b74c11cd6c15b957d26b5e]
+reverse link Usuario to Administrador--><path d="M204,187.334 C204,187.334 204,226.908 204,226.908 " fill="none" id="Usuario&lt;-Administrador" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="197,187.334,204,167.334,211,187.334,197,187.334" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3c353f16ad6f698b146590b8140ac17b]
+reverse link Midia to Livro--><path d="M257.5,636.17 C257.5,636.17 257.5,675.631 257.5,675.631 " fill="none" id="Midia&lt;-Livro" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="250.5,636.17,257.5,616.17,264.5,636.17,250.5,636.17" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[82533b8c2601e7a850642b0dd72d942b]
+reverse link Midia to MidiaPlayer--><path d="M205,636.17 C205,636.17 205,675.631 205,675.631 " fill="none" id="Midia&lt;-MidiaPlayer" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="198,636.17,205,616.17,212,636.17,198,636.17" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5a5467fcde532a33a1a3eb9cfff28bda]
+reverse link MidiaPlayer to Musica--><path d="M129.75,758.121 C129.75,758.121 129.75,822 129.75,822 C129.75,822 115.759,822 100.7839,822 " fill="none" id="MidiaPlayer&lt;-Musica" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="122.75,758.121,129.75,738.121,136.75,758.121,122.75,758.121" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[56f92f22368eec05e35979518733a5f3]
+reverse link MidiaPlayer to Video--><path d="M167,758.121 C167,758.121 167,797.784 167,797.784 " fill="none" id="MidiaPlayer&lt;-Video" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="160,758.121,167,738.121,174,758.121,160,758.121" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[177c67a363ef67bbbfca2d53a69c70b4]
+reverse link MidiaPlayer to Podcast--><path d="M206.75,758.121 C206.75,758.121 206.75,822 206.75,822 C206.75,822 219.239,822 233.29,822 " fill="none" id="MidiaPlayer&lt;-Podcast" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="199.75,758.121,206.75,738.121,213.75,758.121,199.75,758.121" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a97b4c173602f725213a0f665d6057da]
+link Musica to Album--><path d="M65,846.108 C65,846.108 65,892.922 65,892.922 " fill="none" id="Musica-&gt;Album" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="65,905.922,69,899.922,65,893.922,61,899.922,65,905.922" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="20" x="42.5625" y="867.4723">1..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="57.2344" y="894.9252">0</text><!--MD5=[daf2054be4531614ef79fcbe983eac88]
 @startuml class
 skinparam linetype ortho
 
-Flight <|- - Dummy
-
-class Dummy {
-  String data
-  void methods()
+/'
+enum TipoUsuario {
+  academico
+  administrador
 }
 
-class Flight {
-  flightNumber : Integer
-  departureTime : Date
+enum TipoMidia {
+  musica
+  livro
+  video
+  podcast
 }
+'/
+
+
+abstract class Usuario {
+  nome
+  ultimoNome
+  email
+  senha
+  credito
+  List<Midia> midiasAdquiridas
+  autentica()
+  adicionaCreditos()
+}
+
+class Academico {}
+
+class Administrador {}
+/'
+class Dashboard {
+  String nome
+}
+'/
+class Album {
+  List<Musica> musicas
+}
+/'
+interface something <<Interface>> {
+
+}
+'/
+
+abstract class Midia {
+  nome
+  descricao
+  imagem
+  preco
+  autores
+  conteudo
+  dataCriacao
+  pagavel
+  categorias
+}
+
+abstract class MidiaPlayer {
+  duracao
+}
+
+class Livro {
+  numeroPaginas
+}
+
+class Musica {}
+
+class Video {}
+
+class Podcast {}
+
+Autor "1" *- - "1..*" Midia
+
+Usuario o- - Midia
+
+Usuario <|- - Academico
+Academico <|- - Autor
+Usuario <|- - Administrador
+
+Midia <|- - Livro
+Midia <|- - MidiaPlayer
+MidiaPlayer <|- - Musica
+MidiaPlayer <|- - Video
+MidiaPlayer <|- - Podcast
+
+Musica "1..*" - -o "0" Album
+
+
+@enduml
+
+@startuml class
+skinparam linetype ortho
+
+
+
+abstract class Usuario {
+  nome
+  ultimoNome
+  email
+  senha
+  credito
+  List<Midia> midiasAdquiridas
+  autentica()
+  adicionaCreditos()
+}
+
+class Academico {}
+
+class Administrador {}
+class Album {
+  List<Musica> musicas
+}
+
+abstract class Midia {
+  nome
+  descricao
+  imagem
+  preco
+  autores
+  conteudo
+  dataCriacao
+  pagavel
+  categorias
+}
+
+abstract class MidiaPlayer {
+  duracao
+}
+
+class Livro {
+  numeroPaginas
+}
+
+class Musica {}
+
+class Video {}
+
+class Podcast {}
+
+Autor "1" *- - "1..*" Midia
+
+Usuario o- - Midia
+
+Usuario <|- - Academico
+Academico <|- - Autor
+Usuario <|- - Administrador
+
+Midia <|- - Livro
+Midia <|- - MidiaPlayer
+MidiaPlayer <|- - Musica
+MidiaPlayer <|- - Video
+MidiaPlayer <|- - Podcast
+
+Musica "1..*" - -o "0" Album
+
 
 @enduml
 

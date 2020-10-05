@@ -1,16 +1,90 @@
 @startuml class
 skinparam linetype ortho
 
-Flight <|-- Dummy
-
-class Dummy {
-  String data
-  void methods()
+/'
+enum TipoUsuario {
+  academico
+  administrador
 }
 
-class Flight {
-  flightNumber : Integer
-  departureTime : Date
+enum TipoMidia {
+  musica
+  livro
+  video
+  podcast
 }
+'/
+
+
+abstract class Usuario {
+  nome
+  ultimoNome
+  email
+  senha
+  credito
+  List<Midia> midiasAdquiridas
+  autentica()
+  adicionaCreditos()
+}
+
+class Academico {}
+
+class Administrador {}
+/'
+class Dashboard {
+  String nome
+}
+'/
+class Album {
+  List<Musica> musicas
+}
+/'
+interface something <<Interface>> {
+
+}
+'/
+
+abstract class Midia {
+  nome
+  descricao
+  imagem
+  preco
+  autores
+  conteudo
+  dataCriacao
+  pagavel
+  categorias
+}
+
+abstract class MidiaPlayer {
+  duracao
+}
+
+class Livro {
+  numeroPaginas
+}
+
+class Musica {}
+
+class Video {}
+
+class Podcast {}
+
+Autor "1" *-- "1..*" Midia
+
+Usuario o-- Midia
+
+Usuario <|-- Academico
+Academico <|-- Autor
+Usuario <|-- Administrador
+
+Midia <|-- Livro
+Midia <|-- MidiaPlayer
+MidiaPlayer <|-- Musica
+MidiaPlayer <|-- Video
+MidiaPlayer <|-- Podcast
+
+Musica "1..*" --o "0" Album
+
 
 @enduml
