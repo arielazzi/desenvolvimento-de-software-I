@@ -1,18 +1,18 @@
 @startuml class
-/'
-enum TipoUsuario {
-  academico
-  administrador
+skinparam linetype ortho
+
+enum TipoAcademicoEnum <<Enum>> {
+  ALUNO
+  PROFESSOR
+  TECNICOADM
 }
 
-enum TipoMidia {
-  musica
-  livro
-  video
-  podcast
+enum TipoMidiaEnum <<Enum>> {
+  MUSICA
+  VIDEO
+  PODCAST
+  LIVRO
 }
-'/
-
 
 abstract class Usuario {
   nome
@@ -21,28 +21,21 @@ abstract class Usuario {
   senha
   credito
   List<Midia> midiasAdquiridas
-  List<Midia> midiasfavoritas
+  Map<TipoMidiaEnum, List<Midia>> midiasfavoritas
   ---
   autentica()
   adicionaCreditos()
 }
 
-class Academico {}
+class Academico {
+  tipo : TipoAcademicoEnum
+}
 
 class Administrador {}
-/'
-class Dashboard {
-  String nome
-}
-'/
+
 class Album {
   List<Musica> musicas
 }
-/'
-interface something <<Interface>> {
-
-}
-'/
 
 abstract class Midia {
   nome
@@ -52,7 +45,7 @@ abstract class Midia {
   autores
   conteudo
   dataCriacao
-  pagavel
+  pagavel: boolean
   ---
   visualizar()
   comprar()
@@ -63,6 +56,10 @@ abstract class Midia {
 abstract class MidiaPlayer {
   duracao
   executar()
+}
+
+class Dashboard { 
+  acompanharVendas()
 }
 
 class Livro {
@@ -86,6 +83,9 @@ Autor "1" *-- "1..*" Midia
 
 Usuario o-- Midia
 
+Academico *-- TipoAcademicoEnum
+Usuario *-- TipoMidiaEnum
+
 Usuario <|-- Academico
 Academico <|-- Autor
 Usuario <|-- Administrador
@@ -102,12 +102,39 @@ interface VisualizarMidia <<Interface>>
 interface RemoverMidia <<Interface>> 
 interface RemoverAcademico <<Interface>> 
 interface AtualizarMidia <<Interface>> 
+interface AdicionarCredito <<Interface>> 
+interface CriarAlbum <<Interface>> 
+interface VisualizarAlbum <<Interface>> 
 
-VisualizarMidia <|.. Autor
+VisualizarAlbum <|.. Academico
+CriarAlbum <|.. Autor
+AdicionarCredito <|.. Usuario
+VisualizarMidia <|.. Usuario
 RemoverMidia <|.. Autor
 RemoverMidia <|.. Administrador
 RemoverAcademico <|.. Administrador
 AtualizarMidia <|.. Autor
+
+interface ExecutarMidiaPlayer <<Interface>> 
+interface ComprarMidia <<Interface>> 
+interface VenderMidia <<Interface>> 
+interface DownloadMidia <<Interface>> 
+interface AdicionarMidiaEmListaFavorito <<Interface>> 
+interface VisualizarCreditor <<Interface>> 
+interface VisualizarCreditor <<Interface>> 
+
+VisualizarCreditor <|.. Usuario
+AdicionarMidiaEmListaFavorito <|.. Usuario
+ExecutarMidiaPlayer <|.. Usuario
+ComprarMidia <|.. Usuario
+VenderMidia <|.. Usuario
+DownloadMidia <|.. Usuario
+
+Administrador --> Dashboard : <<delegates>>
+
+hide Dashboard attributes
+hide TipoAcademicoEnum methods
+hide TipoMidiaEnum methods
 
 
 @enduml
