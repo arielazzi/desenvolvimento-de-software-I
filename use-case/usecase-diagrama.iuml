@@ -1,14 +1,68 @@
 @startuml usecase
 skinparam linetype ortho
 
-:Acadêmico: as academico
+:Usuario: as usuario
 :Autor: as autor
-:Administrador: as administrador
+:Acadêmico: as academico
 
-(Criar midia) as (create-media)
+usuario <|-- autor
+usuario <|-- academico
 
-academico <|-- autor
+rectangle sistema {
+    ' rectangle conta {
+        usuario -- (criar conta)
+        usuario -- (recuperar conta)
+        usuario -- (autenticar)
+    ' }
 
-autor -- (create-media)
+    ' rectangle midia {
+        autor -- (visualizar mídia)
+        autor -- (remover mídia)
+        autor -- (atualizar midia)
+
+        (autenticar) <. (remover mídia) : includes
+        (autenticar) <. (atualizar midia) : includes
+        (autenticar) <. (visualizar mídia) : includes
+        (autenticar) <. (executar mídia) : includes
+        (autenticar) <. (comprar mídia) : includes
+        (autenticar) <. (vender mídia) : includes
+        (autenticar) <. (download mídia) : includes
+        (autenticar) <. (classificar mídia) : includes
+        (autenticar) <. (executar buscas refinadas de mídia) : includes
+
+
+        academico -- (visualizar mídia)
+        academico -- (executar mídia)
+        academico -- (comprar mídia)
+        academico -- (vender mídia)
+        academico -- (download mídia)
+        academico -- (classificar mídia)
+        academico -- (executar buscas refinadas de mídia)
+    ' }
+
+    ' rectangle album {
+        autor -- (criar album)
+
+        academico -- (visualizar albuns)
+        
+        (visualizar albuns) <. (visualizar albuns novos) : extends
+        (visualizar albuns) <. (visualizar albuns recentes) : extends
+        (visualizar albuns) <. (visualizar todos os albuns) : extends
+    ' }
+}
+' :Acadêmico: as academico
+' :Autor: as autor
+' :Administrador: as administrador
+' :Teste2: as teste
+
+' (Criar midia) as (create-media)
+
+' admnistrador -- teste2
+
+' ' academico <|-- autor
+
+' autor -- (create-media)
+
+' ' (create-media) <|-- (teste)
 
 @enduml
