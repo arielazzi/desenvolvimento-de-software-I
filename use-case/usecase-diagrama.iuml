@@ -1,68 +1,102 @@
 @startuml usecase
-skinparam linetype ortho
+' skinparam linetype ortho
 
-:Usuario: as usuario
+left to right direction
+
+        skinparam ArrowColor Blue
+
+
+:StakeHolder: as usuario
 :Autor: as autor
-:Acadêmico: as academico
+:Acadêmico: as usuario
+:Admnistrador: as admnistrador
 
-usuario <|-- autor
-usuario <|-- academico
+usuario <|-right- autor
+' usuario <|-- usuario
+usuario <|-- admnistrador
 
 rectangle sistema {
-    ' rectangle conta {
-        usuario -- (criar conta)
-        usuario -- (recuperar conta)
-        usuario -- (autenticar)
-    ' }
+        rectangle conta {
+            usuario -right- (criar conta)
+            usuario -right- (recuperar senha)
+            usuario -right- (autenticar)
+            admnistrador -down- (excluir conta)
+        }
 
-    ' rectangle midia {
-        autor -- (visualizar mídia)
-        autor -- (remover mídia)
-        autor -- (atualizar midia)
+        rectangle midia {
 
-        (autenticar) <. (remover mídia) : includes
-        (autenticar) <. (atualizar midia) : includes
-        (autenticar) <. (visualizar mídia) : includes
-        (autenticar) <. (executar mídia) : includes
-        (autenticar) <. (comprar mídia) : includes
-        (autenticar) <. (vender mídia) : includes
-        (autenticar) <. (download mídia) : includes
-        (autenticar) <. (classificar mídia) : includes
-        (autenticar) <. (executar buscas refinadas de mídia) : includes
+            admnistrador -right--- (remover mídia)
 
+            autor -up- (remover mídia)
+            autor -up- (atualizar midia)
 
-        academico -- (visualizar mídia)
-        academico -- (executar mídia)
-        academico -- (comprar mídia)
-        academico -- (vender mídia)
-        academico -- (download mídia)
-        academico -- (classificar mídia)
-        academico -- (executar buscas refinadas de mídia)
-    ' }
+            (autenticar) <.up. (interagir com midia) :includes
 
-    ' rectangle album {
-        autor -- (criar album)
+            (interagir com midia) <.up. (remover mídia) : extends
+            (interagir com midia) <.up. (atualizar midia) : extends
+            (interagir com midia) <.up. (visualizar mídia) : extends
+            (interagir com midia) <.up. (executar mídia) : extends
+            (interagir com midia) <.up. (comprar mídia) : extends
+            (interagir com midia) <.up. (vender mídia) : extends
+            (interagir com midia) <.up. (download mídia) : extends
+            (interagir com midia) <.up. (classificar mídia) : extends
+            (interagir com midia) <.up. (executar buscas refinadas de mídia) : extends
 
-        academico -- (visualizar albuns)
+            (comprar mídia) ..> (emitir comprovante) : includes
+
+            usuario -- (visualizar mídia)
+            usuario -- (executar mídia)
+            usuario -- (comprar mídia)
+            usuario -- (vender mídia)
+            usuario -- (download mídia)
+            usuario -- (classificar mídia)
+            usuario -- (executar buscas refinadas de mídia)
+        }
+
+        rectangle lista {
+            usuario -- (criar lista)
+            usuario -- (visualizar lista) 
+            usuario -- (atualizar lista) 
+            usuario -- (remover midia da lista) 
+
+            (autenticar) <.. (interagir com lista) : includes
+
+            (interagir com lista) <.up. (criar lista) : extends
+            (interagir com lista) <.up. (visualizar lista) : extends
+            (interagir com lista) <.up. (atualizar lista) : extends
+            (interagir com lista) <.up. (remover midia da lista) : extends
+
+        }
         
-        (visualizar albuns) <. (visualizar albuns novos) : extends
-        (visualizar albuns) <. (visualizar albuns recentes) : extends
-        (visualizar albuns) <. (visualizar todos os albuns) : extends
-    ' }
+        rectangle album {
+            autor -- (criar album)
+            usuario -- (visualizar albuns)
+
+            (autenticar) <... (interagir com albums) : includes            
+
+            (interagir com albums) <.up. (criar album) : extends
+            (interagir com albums) <.up. (visualizar albuns) : extends
+
+            (visualizar albuns) <.left. (visualizar albuns novos) : extends
+            (visualizar albuns) <.right. (visualizar albuns recentes) : extends
+            (visualizar albuns) <.up. (visualizar todos os albuns) : extends
+        }
+
+        rectangle credito {
+            usuario -- (visualizar créditos)
+            usuario -- (adicionar créditos)
+
+            (autenticar) <.. (visualizar créditos) : includes
+            (autenticar) <.. (adicionar créditos) : includes
+
+            (adicionar créditos) <.. (via cartão de crédito) : extends
+            (adicionar créditos) <.. (via bolet bancário) : extends
+            (adicionar créditos) <.. (via transferência bancária) : extends
+        }
+
+        ' rectangle adm {
+        '     admnistrador -up- (acompanhar vendas)
+        ' }
 }
-' :Acadêmico: as academico
-' :Autor: as autor
-' :Administrador: as administrador
-' :Teste2: as teste
-
-' (Criar midia) as (create-media)
-
-' admnistrador -- teste2
-
-' ' academico <|-- autor
-
-' autor -- (create-media)
-
-' ' (create-media) <|-- (teste)
 
 @enduml
