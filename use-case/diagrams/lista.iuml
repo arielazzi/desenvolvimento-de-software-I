@@ -1,0 +1,35 @@
+@startuml lista
+
+left to right direction
+
+skinparam ArrowColor Blue
+
+:Usuario: as usuario
+:Acadêmico: as academico
+:Admnistrador: as admnistrador
+
+academico <|-- autor
+usuario <|-left- academico
+usuario <|-down- admnistrador
+
+rectangle sistema {
+    rectangle conta {
+        (autenticar)
+    }
+    rectangle lista {
+        usuario -- (criar lista de favoritos)
+        usuario -- (visualizar lista de favoritos) 
+        usuario -- (atualizar lista de favoritos) 
+        usuario -- (remover midia da lista de favoritos) 
+
+        (autenticar) <.. (interagir com lista) : includes
+
+        (autenticar) <.. (criar lista de favoritos) : includes
+        (autenticar) <.. (visualizar lista de favoritos) : includes
+        (autenticar) <.. (atualizar lista de favoritos) : includes
+        (autenticar) <.. (remover midia da lista de favoritos) : includes
+
+    }
+}
+
+@enduml

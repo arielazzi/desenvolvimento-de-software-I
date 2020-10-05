@@ -1,0 +1,32 @@
+@startuml credito
+
+left to right direction
+
+skinparam ArrowColor Blue
+
+:Usuario: as usuario
+:Acadêmico: as academico
+:Admnistrador: as admnistrador
+
+academico <|-- autor
+usuario <|-down- academico
+usuario <|-up- admnistrador
+
+rectangle sistema {
+    rectangle conta {
+        (autenticar)
+    }
+    rectangle credito {
+        usuario -- (visualizar créditos)
+        usuario -- (adicionar créditos)
+
+        (autenticar) <.. (visualizar créditos) : includes
+        (autenticar) <.. (adicionar créditos) : includes
+
+        (adicionar créditos) <.. (via cartão de crédito) : extends
+        (adicionar créditos) <.. (via boleto bancário) : extends
+        (adicionar créditos) <.. (via transferência bancária) : extends
+    }
+}
+
+@enduml

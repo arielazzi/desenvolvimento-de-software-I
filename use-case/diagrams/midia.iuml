@@ -1,0 +1,48 @@
+@startuml midia
+
+left to right direction
+
+skinparam ArrowColor Blue
+
+:Usuario: as usuario
+:Acadêmico: as academico
+:Admnistrador: as admnistrador
+
+academico <|-down- autor
+usuario <|- academico
+usuario <|-up- admnistrador
+
+rectangle sistema {
+    rectangle conta {
+        (autenticar)
+    }
+     rectangle midia {
+
+            admnistrador -right--- (remover mídia)
+
+            autor -up- (remover mídia)
+            autor -up- (atualizar midia)
+
+            (autenticar) <.up. (remover mídia) : includes
+            (autenticar) <.up. (atualizar midia) : includes
+            (autenticar) <.up. (visualizar mídia) : includes
+            (autenticar) <.up. (executar mídia) : includes
+            (autenticar) <.up. (comprar mídia) : includes
+            (autenticar) <.up. (vender mídia) : includes
+            (autenticar) <.up. (download mídia) : includes
+            (autenticar) <.up. (classificar mídia) : includes
+            (autenticar) <.up. (executar buscas refinadas de mídia) : includes
+
+            (comprar mídia) .> (emitir comprovante) : includes
+
+            usuario -- (visualizar mídia)
+            usuario -- (executar mídia)
+            usuario -- (comprar mídia)
+            usuario -- (vender mídia)
+            usuario -- (download mídia)
+            usuario -- (classificar mídia)
+            usuario -- (executar buscas refinadas de mídia)
+        }
+}
+
+@enduml

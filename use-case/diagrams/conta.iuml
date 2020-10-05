@@ -1,0 +1,25 @@
+@startuml conta
+
+left to right direction
+
+skinparam ArrowColor Blue
+
+:Usuario: as usuario
+:Acadêmico: as academico
+:Admnistrador: as admnistrador
+
+academico <|-- autor
+usuario <|- academico
+usuario <|- admnistrador
+
+
+rectangle sistema {
+        rectangle conta {
+            usuario -- (criar conta)
+            usuario -- (recuperar senha)
+            usuario -- (autenticar)
+            admnistrador -- (excluir conta)
+        }
+}
+
+@enduml

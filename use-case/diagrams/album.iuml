@@ -1,0 +1,32 @@
+@startuml album
+
+left to right direction
+
+skinparam ArrowColor Blue
+
+:Usuario: as usuario
+:Acadêmico: as academico
+:Admnistrador: as admnistrador
+
+academico <|-- autor
+usuario <|- academico
+usuario <|-left- admnistrador
+
+rectangle sistema {
+    rectangle conta {
+        (autenticar)
+    }
+    rectangle album {
+        autor -- (criar album)
+        usuario -- (visualizar albuns)
+
+        (autenticar) <. (criar album) : includes
+        (autenticar) <. (visualizar albuns) : includes
+
+        (visualizar albuns) <.. (visualizar albuns novos) : extends
+        (visualizar albuns) <.. (visualizar albuns recentes) : extends
+        (visualizar albuns) <.. (visualizar todos os albuns) : extends
+    }
+}
+
+@enduml
