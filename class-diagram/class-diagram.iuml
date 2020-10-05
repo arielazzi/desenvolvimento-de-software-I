@@ -110,7 +110,6 @@ VisualizarAlbum <|.. Academico
 CriarAlbum <|.. Autor
 AdicionarCredito <|.. Usuario
 VisualizarMidia <|.. Usuario
-VisualizarMidia <|.. Autor
 RemoverMidia <|.. Autor
 RemoverMidia <|.. Administrador
 RemoverAcademico <|.. Administrador
