@@ -1,5 +1,4 @@
 @startuml class
-
 /'
 enum TipoUsuario {
   academico
@@ -22,6 +21,8 @@ abstract class Usuario {
   senha
   credito
   List<Midia> midiasAdquiridas
+  List<Midia> midiasfavoritas
+  ---
   autentica()
   adicionaCreditos()
 }
@@ -52,22 +53,34 @@ abstract class Midia {
   conteudo
   dataCriacao
   pagavel
-  categorias
+  ---
+  visualizar()
+  comprar()
+  vender()
+  download() 
 }
 
 abstract class MidiaPlayer {
   duracao
+  executar()
 }
 
 class Livro {
   numeroPaginas
+  categorias
 }
 
-class Musica {}
+class Musica {
+  categorias
+}
 
-class Video {}
+class Video {
+  categorias
+}
 
-class Podcast {}
+class Podcast {
+  categorias
+}
 
 Autor "1" *-- "1..*" Midia
 
@@ -84,6 +97,17 @@ MidiaPlayer <|-- Video
 MidiaPlayer <|-- Podcast
 
 Musica "1..*" --o "0" Album
+
+interface VisualizarMidia <<Interface>> 
+interface RemoverMidia <<Interface>> 
+interface RemoverAcademico <<Interface>> 
+interface AtualizarMidia <<Interface>> 
+
+VisualizarMidia <|.. Autor
+RemoverMidia <|.. Autor
+RemoverMidia <|.. Administrador
+RemoverAcademico <|.. Administrador
+AtualizarMidia <|.. Autor
 
 
 @enduml
