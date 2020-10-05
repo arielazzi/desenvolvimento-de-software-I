@@ -1,16 +1,113 @@
 @startuml class
-skinparam linetype ortho
-
-Flight <|-- Dummy
-
-class Dummy {
-  String data
-  void methods()
+/'
+enum TipoUsuario {
+  academico
+  administrador
 }
 
-class Flight {
-  flightNumber : Integer
-  departureTime : Date
+enum TipoMidia {
+  musica
+  livro
+  video
+  podcast
 }
+'/
+
+
+abstract class Usuario {
+  nome
+  ultimoNome
+  email
+  senha
+  credito
+  List<Midia> midiasAdquiridas
+  List<Midia> midiasfavoritas
+  ---
+  autentica()
+  adicionaCreditos()
+}
+
+class Academico {}
+
+class Administrador {}
+/'
+class Dashboard {
+  String nome
+}
+'/
+class Album {
+  List<Musica> musicas
+}
+/'
+interface something <<Interface>> {
+
+}
+'/
+
+abstract class Midia {
+  nome
+  descricao
+  imagem
+  preco
+  autores
+  conteudo
+  dataCriacao
+  pagavel
+  ---
+  visualizar()
+  comprar()
+  vender()
+  download() 
+}
+
+abstract class MidiaPlayer {
+  duracao
+  executar()
+}
+
+class Livro {
+  numeroPaginas
+  categorias
+}
+
+class Musica {
+  categorias
+}
+
+class Video {
+  categorias
+}
+
+class Podcast {
+  categorias
+}
+
+Autor "1" *-- "1..*" Midia
+
+Usuario o-- Midia
+
+Usuario <|-- Academico
+Academico <|-- Autor
+Usuario <|-- Administrador
+
+Midia <|-- Livro
+Midia <|-- MidiaPlayer
+MidiaPlayer <|-- Musica
+MidiaPlayer <|-- Video
+MidiaPlayer <|-- Podcast
+
+Musica "1..*" --o "0" Album
+
+interface VisualizarMidia <<Interface>> 
+interface RemoverMidia <<Interface>> 
+interface RemoverAcademico <<Interface>> 
+interface AtualizarMidia <<Interface>> 
+
+VisualizarMidia <|.. Autor
+RemoverMidia <|.. Autor
+RemoverMidia <|.. Administrador
+RemoverAcademico <|.. Administrador
+AtualizarMidia <|.. Autor
+
 
 @enduml

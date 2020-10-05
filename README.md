@@ -1,16 +1,16 @@
-# Desenvolvimento de Software I
+# :computer: Desenvolvimento de Software I 
 
 Este repositório tem como objetivo o desenvolvimento das etapas I e II do trabalho da cadeira de Desenvolvimento de Software I 2020/2.
 
 ## Etapa 1 - Entrega: 05/10/2020
 
-- [ ] Diagrama de casos de uso (2 pontos); 
-- [ ] Especificação de casos de uso (2 pontos);
+- [ ] Diagrama de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
+- [ ] Especificação de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
    - [ ] mínimo 7 especificações detalhadas/completas
    - [ ] 5 informais; 
-- [ ] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas); 
-- [ ] Diagrama de classes (modelo conceitual) (2 pontos); 
-- [ ] Estimativa de esforço de desenvolvimento (2 pontos);
+- [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas) → [@João Vitor](https://github.com/joaovitorps)
+- [ ] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
+- [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 
 ## Etapa 2 - Entrega: xx/xx/2020
 
@@ -20,8 +20,8 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 
 ## Descrição Geral 
-
-   O propósito do Sistema de Gerenciamento de Mídia, chamado de uniTunes, é permitir que a comunidade acadêmica universitária possa gerenciar mídias utilizando o sistema. O uniTunes possui três stakeholders: acadêmico e administrador. O acadêmico trata-se de todos os stakeholders que tem um vínculo com uma universidade (tais como alunos, professores, técnicos administrativos e dentre outros). O acadêmico pode ser um autor, o qual é um usuário que cria algum tipo de mídia e a disponibiliza no uniTunes. Para um acadêmico passar a ser considerado autor, ele deve necessariamente ter criado e disponibilizado uma (ou mais) mídia no sistema. O autor tem o total controle sobre a mídia criada, podendo visualizá-la, removê-la e atualizá-la. A mídia disponibilizada na uniTunes poderá ser de livre acesso ou paga. Cada mídia disponibilizada (de não livre acesso) terá um valor igual ou maior que R$ 0,01. O administrador do sistema é responsável por fiscalizar as atividades realizadas pelos usuários do sistema com o objetivo de evitar comportamentos inadequados como, por exemplo, mídia que viole a privacidade, as regras da universidade, ou mesmo princípios éticos. Se o administrador do sistema identificar alguma mídia inapropriada, ele poderá removê-la, sendo o autor notificado do motivo da remoção da mídia. O administrador poderá também excluir a conta de acadêmicos e autores, porém o inverso não é possível. 
+<details>
+    <summary> O propósito do Sistema de Gerenciamento de Mídia, chamado de uniTunes, é permitir que a comunidade acadêmica universitária possa gerenciar mídias utilizando o sistema. O uniTunes possui três stakeholders: acadêmico e administrador. O acadêmico trata-se de todos os stakeholders que tem um vínculo com uma universidade (tais como alunos, professores, técnicos administrativos e dentre outros).</summary> O acadêmico pode ser um autor, o qual é um usuário que cria algum tipo de mídia e a disponibiliza no uniTunes. Para um acadêmico passar a ser considerado autor, ele deve necessariamente ter criado e disponibilizado uma (ou mais) mídia no sistema. O autor tem o total controle sobre a mídia criada, podendo visualizá-la, removê-la e atualizá-la. A mídia disponibilizada na uniTunes poderá ser de livre acesso ou paga. Cada mídia disponibilizada (de não livre acesso) terá um valor igual ou maior que R$ 0,01. O administrador do sistema é responsável por fiscalizar as atividades realizadas pelos usuários do sistema com o objetivo de evitar comportamentos inadequados como, por exemplo, mídia que viole a privacidade, as regras da universidade, ou mesmo princípios éticos. Se o administrador do sistema identificar alguma mídia inapropriada, ele poderá removê-la, sendo o autor notificado do motivo da remoção da mídia. O administrador poderá também excluir a conta de acadêmicos e autores, porém o inverso não é possível.
    
    A uniTunes terá às seguintes mídias: música (Figura 1), livro (Figura 2), vídeos (Figura 3) e podcasts (Figura 4). Toda mídia é caracterizada pelo seu nome, descrição, imagem, preço, nome do(s) autor(es), conteúdo (sendo a própria mídia), data de criação e categoria. As categorias das mídias são apresentadas no lado direito das Figura 1, Figura 2, Figura 3 e Figura 4. Além destas características, as mídias do tipo música, vídeo e podcasts serão caracterizadas pela duração contabilizada em minutos. Livro, por sua vez, será também caracterizado pelo seu número de páginas. Os stakeholders usarão estas categorias para classificar as mídias e executar buscas mais refinadas e customizadas. O sistema deverá ter uma interface específica para cada tipo de mídia. As Figura 1, Figura 2, Figura 3 e Figura 4 ilustram tais interfaces. Os stakeholders do uniTunes poderão executar uma mídia (exceto para livro), visualizar, comprar, vender, fazer download e organizar mídias digitais em listas de favoritos. Isto é, os stakeholders poderão criar uma lista de favoritos para cada tipo de mídia, bem como visualizar, atualizar e remover uma mídia de uma lista de favoritos.
    
@@ -39,3 +39,15 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 
 ![Alt text](img/img4.png)
+</details>
+
+
+## Contributors ✨
+
+<table>
+  <tr>
+    <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/17055516?s=460&u=8349659f0012b935bd8dd92c822b3fca02ed3049&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Ariel Azzi</b></sub></a></td>
+     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars2.githubusercontent.com/u/25901846?s=460&u=fe44793f8027f6187420ed4d628697df3318cc76&v=4?v=3" width="100px;" alt=""/><br /><sub><b>Andresho</b></sub></a></td>
+     <td align="center"><a href="https://kentcdodds.com"><img src="https://avatars3.githubusercontent.com/u/48125062?s=460&v=4?v=3" width="100px;" alt=""/><br /><sub><b>joaovitorps</b></sub></a></td>
+  </tr>
+</table>
