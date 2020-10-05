@@ -12,7 +12,7 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 - [ ] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 - [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 
-## Etapa 2 - Entrega: xx/xx/2020
+## Etapa 2 - Entrega: 23/11/2020 
 
 - [ ] Diagrama de classes (refinado) (3 pontos)
 - [ ] Diagrama de componentes (3 pontos)
