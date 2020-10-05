@@ -9,7 +9,7 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
    - [ ] mínimo 7 especificações detalhadas/completas
    - [ ] 5 informais; 
 - [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas) → [@João Vitor](https://github.com/joaovitorps)
-- [ ] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
+- [x] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 - [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 
 ## Etapa 2 - Entrega: 23/11/2020 
