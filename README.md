@@ -4,10 +4,10 @@ Este repositório tem como objetivo o desenvolvimento das etapas I e II do traba
 
 ## Etapa 1 - Entrega: 05/10/2020
 
-- [ ] Diagrama de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
-- [ ] Especificação de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
-   - [ ] mínimo 7 especificações detalhadas/completas
-   - [ ] 5 informais; 
+- [x] Diagrama de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
+- [x] Especificação de casos de uso (2 pontos) → [@André Hoffmann](https://github.com/Andresho)
+   - [x] mínimo 7 especificações detalhadas/completas
+   - [x] 5 informais; 
 - [x] Diagrama de atividades (2 pontos) (no mínimo 5 diagramas) → [@João Vitor](https://github.com/joaovitorps)
 - [x] Diagrama de classes (modelo conceitual) (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
 - [x] Estimativa de esforço de desenvolvimento (2 pontos) → [@Ariel Azzi](https://github.com/arielazzi)
