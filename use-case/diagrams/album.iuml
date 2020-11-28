@@ -2,28 +2,28 @@
 
 left to right direction
 
-:Usuario: as usuario
-:Acadêmico: as academico
+:Usuario: as Usuario
+:Acadêmico: as Academico
 :Admnistrador: as admnistrador
 
-academico <|-- autor
-usuario <|- academico
-usuario <|-left- admnistrador
+Academico <|-- Autor
+Usuario <|- Academico
+Usuario <|-left- admnistrador
 
-rectangle sistema {
-    rectangle conta {
-        (autenticar)
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
     }
-    rectangle album {
-        autor -- (criar album)
-        usuario -- (visualizar albuns)
+    rectangle Album {
+        Autor -- (Criar Album)
+        Usuario -- (Visualizar albuns)
 
-        (autenticar) <. (criar album) : includes
-        (autenticar) <. (visualizar albuns) : includes
+        (Autenticar usuário) <. (Criar album) : includes
+        (Autenticar usuário) <. (Visualizar albuns) : includes
 
-        (visualizar albuns) <.. (visualizar albuns novos) : extends
-        (visualizar albuns) <.. (visualizar albuns recentes) : extends
-        (visualizar albuns) <.. (visualizar todos os albuns) : extends
+        (Visualizar albuns) <|-- (Visualizar albuns novos) 
+        (Visualizar albuns) <|-- (Visualizar albuns recentes) 
+        (Visualizar albuns) <|-- (Visualizar todos os albuns) 
     }
 }
 

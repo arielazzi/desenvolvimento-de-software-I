@@ -1,5 +1,4 @@
 @startuml class
-skinparam linetype ortho
 
 enum TipoAcademicoEnum <<Enum>> {
   ALUNO
@@ -22,9 +21,6 @@ abstract class Usuario {
   credito
   List<Midia> midiasAdquiridas
   Map<TipoMidiaEnum, List<Midia>> midiasfavoritas
-  ---
-  autentica()
-  adicionaCreditos()
 }
 
 class Academico {
@@ -46,20 +42,13 @@ abstract class Midia {
   conteudo
   dataCriacao
   pagavel: boolean
-  ---
-  visualizar()
-  comprar()
-  vender()
-  download() 
 }
 
 abstract class MidiaPlayer {
   duracao
-  executar()
 }
 
-class Dashboard { 
-  acompanharVendas()
+class Dashboard {
 }
 
 class Livro {
@@ -79,22 +68,22 @@ class Podcast {
   categorias
 }
 
-Autor "1" *-- "1..*" Midia
+Autor "1" *-- "1..*" Midia : cria > 
 
 Usuario o-- Midia
 
 Academico *-- TipoAcademicoEnum
 Usuario *-- TipoMidiaEnum
 
-Usuario <|-- Academico
-Academico <|-- Autor
-Usuario <|-- Administrador
+Usuario <|-- Academico : < é um
+Academico <|-- Autor : < é um (se criou 1 ou mais midias)
+Usuario <|-- Administrador: < é uma
 
-Midia <|-- Livro
-Midia <|-- MidiaPlayer
-MidiaPlayer <|-- Musica
-MidiaPlayer <|-- Video
-MidiaPlayer <|-- Podcast
+Midia <|-- Livro  : < é uma
+Midia <|-- MidiaPlayer : < é uma
+MidiaPlayer <|-- Musica : tem >
+MidiaPlayer <|-- Video : tem >
+MidiaPlayer <|-- Podcast : tem >
 
 Musica "1..*" --o "0" Album
 

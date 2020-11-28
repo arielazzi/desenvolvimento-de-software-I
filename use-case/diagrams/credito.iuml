@@ -2,28 +2,28 @@
 
 left to right direction
 
-:Usuario: as usuario
-:Acadêmico: as academico
-:Admnistrador: as admnistrador
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Administrador: as Administrador
 
-academico <|-- autor
-usuario <|-down- academico
-usuario <|-up- admnistrador
+Academico <|-- Autor
+Usuario <|-down- Academico
+Usuario <|-up- Administrador
 
-rectangle sistema {
-    rectangle conta {
-        (autenticar)
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
     }
     rectangle credito {
-        usuario -- (visualizar créditos)
-        usuario -- (adicionar créditos)
+        Usuario -- (Visualizar créditos)
+        Usuario -- (Adicionar créditos)
 
-        (autenticar) <.. (visualizar créditos) : includes
-        (autenticar) <.. (adicionar créditos) : includes
+        (Autenticar usuário) <.. (Visualizar créditos) : includes
+        (Autenticar usuário) <.. (Adicionar créditos) : includes
 
-        (adicionar créditos) <.. (via cartão de crédito) : extends
-        (adicionar créditos) <.. (via boleto bancário) : extends
-        (adicionar créditos) <.. (via transferência bancária) : extends
+        (Adicionar créditos) <|-- (Via cartão de crédito)
+        (Adicionar créditos) <|-- (Via boleto bancário)
+        (Adicionar créditos) <|-- (Via transferência bancária)
     }
 }
 

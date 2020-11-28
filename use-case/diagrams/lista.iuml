@@ -2,30 +2,30 @@
 
 left to right direction
 
-:Usuario: as usuario
-:Acadêmico: as academico
-:Admnistrador: as admnistrador
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Admnistrador: as Admnistrador
 
-academico <|-- autor
-usuario <|-left- academico
-usuario <|-down- admnistrador
+Academico <|-- Autor
+Usuario <|-left- Academico
+Usuario <|-down- Admnistrador
 
-rectangle sistema {
-    rectangle conta {
-        (autenticar)
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
     }
-    rectangle lista {
-        usuario -- (criar lista de favoritos)
-        usuario -- (visualizar lista de favoritos) 
-        usuario -- (atualizar lista de favoritos) 
-        usuario -- (remover midia da lista de favoritos) 
+    rectangle Lista {
+        Usuario -- (Criar lista de favoritos)
+        Usuario -- (Visualizar lista de favoritos) 
+        Usuario -- (Atualizar lista de favoritos) 
+        Usuario -- (Remover midia da lista de favoritos) 
 
-        (autenticar) <.. (interagir com lista) : includes
+        (Autenticar usuário) <.. (Interagir com lista) : includes
 
-        (autenticar) <.. (criar lista de favoritos) : includes
-        (autenticar) <.. (visualizar lista de favoritos) : includes
-        (autenticar) <.. (atualizar lista de favoritos) : includes
-        (autenticar) <.. (remover midia da lista de favoritos) : includes
+        (Autenticar usuário) <.. (Criar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Visualizar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Atualizar lista de favoritos) : includes
+        (Autenticar usuário) <.. (Remover midia da lista de favoritos) : includes
 
     }
 }

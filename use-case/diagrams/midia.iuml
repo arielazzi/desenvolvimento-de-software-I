@@ -2,44 +2,44 @@
 
 left to right direction
 
-:Usuario: as usuario
-:Acadêmico: as academico
-:Admnistrador: as admnistrador
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Administrador: as Administrador
 
-academico <|-down- autor
-usuario <|- academico
-usuario <|-up- admnistrador
+Academico <|-down- Autor
+Usuario <|- Academico
+Usuario <|-up- Administrador
 
-rectangle sistema {
-    rectangle conta {
-        (autenticar)
+rectangle Sistema {
+    rectangle Conta {
+        (Autenticar usuário)
     }
-     rectangle midia {
+     rectangle Midia {
 
-            admnistrador -right--- (remover mídia)
+            Administrador -right--- (Remover mídia)
 
-            autor -up- (remover mídia)
-            autor -up- (atualizar midia)
+            Autor -up- (Remover mídia)
+            Autor -up- (Atualizar midia)
 
-            (autenticar) <.up. (remover mídia) : includes
-            (autenticar) <.up. (atualizar midia) : includes
-            (autenticar) <.up. (visualizar mídia) : includes
-            (autenticar) <.up. (executar mídia) : includes
-            (autenticar) <.up. (comprar mídia) : includes
-            (autenticar) <.up. (vender mídia) : includes
-            (autenticar) <.up. (download mídia) : includes
-            (autenticar) <.up. (classificar mídia) : includes
-            (autenticar) <.up. (executar buscas refinadas de mídia) : includes
+            (Autenticar usuário) <.up. (Remover mídia) : includes
+            (Autenticar usuário) <.up. (Atualizar midia) : includes
+            (Autenticar usuário) <.up. (Visualizar mídia) : includes
+            (Autenticar usuário) <.up. (Executar mídia) : includes
+            (Autenticar usuário) <.up. (Comprar mídia) : includes
+            (Autenticar usuário) <.up. (Vender mídia) : includes
+            (Autenticar usuário) <.up. (Download mídia) : includes
+            (Autenticar usuário) <.up. (Classificar mídia) : includes
+            (Autenticar usuário) <.up. (Executar buscas refinadas de mídia) : includes
 
-            (comprar mídia) .> (emitir comprovante) : includes
+            (Comprar mídia) .> (Emitir comprovante) : includes
 
-            usuario -- (visualizar mídia)
-            usuario -- (executar mídia)
-            usuario -- (comprar mídia)
-            usuario -- (vender mídia)
-            usuario -- (download mídia)
-            usuario -- (classificar mídia)
-            usuario -- (executar buscas refinadas de mídia)
+            Usuario -- (Visualizar mídia)
+            Usuario -- (Executar mídia)
+            Usuario -- (Comprar mídia)
+            Usuario -- (Vender mídia)
+            Usuario -- (Download mídia)
+            Usuario -- (Classificar mídia)
+            Usuario -- (Executar buscas refinadas de mídia)
         }
 }
 

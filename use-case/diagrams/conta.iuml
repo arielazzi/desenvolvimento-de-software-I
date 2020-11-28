@@ -2,21 +2,21 @@
 
 left to right direction
 
-:Usuario: as usuario
-:Acadêmico: as academico
-:Admnistrador: as admnistrador
+:Usuario: as Usuario
+:Acadêmico: as Academico
+:Admnistrador: as Admnistrador
 
-academico <|-- autor
-usuario <|- academico
-usuario <|- admnistrador
+Academico <|-- Autor
+Usuario <|- Academico
+Usuario <|- Admnistrador
 
 
-rectangle sistema {
-        rectangle conta {
-            usuario -- (criar conta)
-            usuario -- (recuperar senha)
-            usuario -- (autenticar)
-            admnistrador -- (excluir conta)
+rectangle Sistema {
+        rectangle Conta {
+            Usuario -- (Criar conta)
+            Usuario -- (Recuperar senha)
+            Usuario -- (Autenticar usuário)
+            admnistrador -- (Excluir conta)
         }
 }
 
