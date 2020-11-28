@@ -4,22 +4,22 @@ start
 :Selecionar a opção **Criar Mídia**;
 :Selecionar tipo de mídia;
 fork
-    :Música;
+    :Selecionar música;
 fork again
-    :Livro;
+    :Selecionar livro;
 fork again
-    :Vídeo;
+    :Selecionar vídeo;
 fork again
-    :Podcast;
+    :Selecionar podcast;
 end fork
 repeat :Fornecer dados da mídia;
 backward :Informar que o formato não é adequado;
-repeat while (O formato é adequado?) is (Não) not (Sim)
+repeat while (Verificar se o formato é adequado) is (Não) not (Sim)
 :Selecionar valor da mídia;
 fork
-    :Livre;
+    :Selecionar opção livre acesso;
 fork again
-    :Paga;
+    :Selecionar opção paga;
 end fork
 :Confirmar dados;
 :Confirmar criação;

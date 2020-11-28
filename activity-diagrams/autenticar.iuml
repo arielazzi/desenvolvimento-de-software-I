@@ -4,7 +4,7 @@ start
 :Selecionar a opção **Autenticar**;
 repeat :Fornecer dados da conta;
 backward :Informar que os dados da conta não estão corretos;
-repeat while (Os dados da conta estão corretos?) is (Não) not (Sim)
+repeat while (Verificar se dados estão corretos) is (Não) not (Sim)
 :Criar um token de autenticação temporário;
 :Enviar token de autenticação ao acadêmico;
 stop
